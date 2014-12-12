@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><link href="../../bootstrap-combined.min.css" rel="stylesheet" /><script type="text/javascript" src="../../jquery-1.9.1.min.js"></script><script type="text/javascript" src="../../bootstrap.min.js"></script><link href="../../styles.css" rel="stylesheet" /><link rel="icon" href="../../favicon.ico" type="image/x-icon"></link><script type="text/javascript" src="../../nav.js"></script><script type="text/javascript" src="../../index.js"></script><script type="text/javascript">var dox = {rootPath: "../../",platforms: ["project"]};</script><title>FormatDate</title></head><body><div class="navbar navbar-inverse navbar-fixed-top"><div class="navbar-inner"><form class="navbar-search pull-left" id="searchForm"><input id="search" type="text" class="search-query" placeholder="Filter" autocomplete="off"/></form><ul class="nav"><li id="select-platform" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Platform<b class="caret"></b></a><ul class="dropdown-menu"><li data="all"><a href="#">All Platforms</a></li><li data="project"><a href="#">project</a></li></ul></li></ul></div></div><div id="container"><div id="nav"></div><div id="content"><div class="header"><h1><code><span class="directive">class </span><span class="type">thx.culture.FormatDate</span></code></h1></div><div class="body"><p class="availability">Available on all platforms</p><div class="doc"><p></p></div><h2>Class Fields</h2><div class="platform platform-project"><a name="date"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#date"><span class="identifier">date</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateRfc"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateRfc"><span class="identifier">dateRfc</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateShort"><span class="identifier">dateShort</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateShortTime"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateShortTime"><span class="identifier">dateShortTime</span></a>(d:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateShortTimeShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateShortTimeShort"><span class="identifier">dateShortTimeShort</span></a>(d:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateTime"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateTime"><span class="identifier">dateTime</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateTimeShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateTimeShort"><span class="identifier">dateTimeShort</span></a>(d:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="dateYMD"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#dateYMD"><span class="identifier">dateYMD</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="format"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#format"><span class="identifier">format</span></a>(date:<a class="type" href="../../Date.html">Date</a>, pattern:<a class="type" href="../../String.html">String</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null, ?leadingspace:<a class="type" href="../../Bool.html">Bool</a> = true):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p>Returns a formatted date according to the passed pattern and culture. The pattern
+paramter accepts the following modifiers.</p><pre>
+    description                                                   example
+===========================================================================
+%a	The abbreviated weekday name according to the current locale. Wed
+%A	The full weekday name according to the current locale.	      Wednesday
+%b	The abbreviated month name according to the current locale.	  Jan
+%B	The full month name according to the current locale.	      January
+%c	The preferred date and time representation for the current locale.
+%C	The century number (year/100) as a 2-digit integer.	          19
+%d	The day of the month as a decimal number (range 01 to 31).	  07
+%D	Equivalent to %m/%d/%y. (This is the USA date format.         06/25/04
+    In many countries %d/%m/%y is the standard date format.
+    Thus, in an international context, both of these formats are
+    ambiguous and should be avoided.)
+%e	Like %d, the day of the month as a decimal number, but a      7
+    leading zero may be replaced by a leadingspace.
+%G	The ISO 8601 year with century as a decimal number. The       2004
+    4-digit year corresponding to the ISO week number (see %V).
+    This has the same format and value as %y, except that if the
+    ISO week number belongs to the previous or next year, that
+    year is used instead.
+%g	Like %G, but without century, i.e., with a 2-digit year       04
+    (00-99).
+%h	Equivalent to %b.	                                          Jan
+%H	The hour as a decimal number using a 24-hour clock            22
+    (range 00 to 23).
+%I	The hour as a decimal number using a 12-hour clock            07
+    (range 01 to 12).
+%j	The day of the year as a decimal number (range 001 to 366).   008
+%k	The hour (24-hour clock) as a decimal number (range 0 to 23); 7
+    single-digits are optionally prefixed by leadingspace.
+    (See also %H.)
+%l	The hour (12-hour clock) as a decimal number (range 1 to 12); 7
+    single-digits are optionally prefixed by leadingspace.
+    (See also %I.)
+%m	The month as a decimal number (range 01 to 12).	              04
+%M	The minute as a decimal number (range 00 to 59).              08
+%n	A newline character.
+%p	Either 'AM' or 'PM' according to the given time value, or the AM
+    corresponding strings for the current locale. Noon is treated
+    as 'pm' and midnight as 'am'.
+%P	Like %p but in lowercase: 'am' or 'pm' or a corresponding     AM
+    string for the current locale.
+%r	The time in a.m. or p.m. notation. In the POSIX locale this   07:08:09 am
+    is equivalent to '%I:%M:%S %p'.
+%R	The time in 24-hour notation (%H:%M). For a version including 07:08
+    the seconds, see %T below.
+%s	The number of seconds since the Epoch, i.e., since            1099928130
+    1970-01-01 00:00:00 UTC.
+%S	The second as a decimal number (range 00 to 61). the upper    07
+    level of the range 61 rather than 59 to allow for the
+    occasional leap second and even more occasional double leap
+    second.
+%t	A tab character.
+%T	The time in 24-hour notation (%H:%M:%S).                      17:08:09
+%u	The day of the week as a decimal, range 1 to 7, Monday
+    being 1. See also %w.
+%U	The week number of the current year as a decimal number,      26
+    range 00 to 53, starting with the first Sunday as the first
+    day of week 01. See also %V and %W.
+%V	The ISO 8601:1988 week number of the current year as a        26
+    decimal number, range 01 to 53, where week 1 is the first
+    week that has at least 4 days in the current year, and with
+    Monday as the first day of the week. See also %U and %W.
+%w	The day of the week as a decimal, range 0 to 6, Sunday being
+    0. See also %u.
+%W	The week number of the current year as a decimal number,
+    range 00 to 53, starting with the first Monday as the first
+    day of week 01.
+%x	The preferred date representation for the current locale
+    without the time.
+%X	The preferred time representation for the current locale
+    without the date.
+%y	The year as a decimal number without a century                04
+    (range 00 to 99).
+%Y	The year as a decimal number including the century.           2004
+%z	The time-zone as hour offset from GMT. Required to emit       -2
+    RFC822-conformant dates (using "%a, %d %b %Y %H:%M:%S %z").
+%Z	The time zone or name or abbreviation.                        GMT
+%%	A literal '%' character.                                      %
+<p>customs for missing features
+%f  The month. Single-digit months may be prefixed by             6
+    leadingspace.
+%i  The minute. Single-digit minutes may be prefixed by           8
+    leadingspace.
+%q  The second. Single-digit seconds may be prefixed by           9
+    leadingspace.
+</pre></p></div></div><div class="platform platform-project"><a name="hourShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#hourShort"><span class="identifier">hourShort</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="month"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#month"><span class="identifier">month</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="monthDay"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#monthDay"><span class="identifier">monthDay</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="monthDayShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#monthDayShort"><span class="identifier">monthDayShort</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="monthName"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#monthName"><span class="identifier">monthName</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="monthNameShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#monthNameShort"><span class="identifier">monthNameShort</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="sortable"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#sortable"><span class="identifier">sortable</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="time"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#time"><span class="identifier">time</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="timeShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#timeShort"><span class="identifier">timeShort</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="universal"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#universal"><span class="identifier">universal</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="weekDay"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#weekDay"><span class="identifier">weekDay</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="weekDayName"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#weekDayName"><span class="identifier">weekDayName</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="weekDayNameFromNum"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#weekDayNameFromNum"><span class="identifier">weekDayNameFromNum</span></a>(weekDayNum:<a class="type" href="../../Int.html">Int</a>, ?firstDayOfWk:<a class="type" href="../../Int.html">Int</a> = 0, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p>Given a week day number, retrieve the day name.
+<em>
+</em>	@param weekDayNum The day number in the week.  0 is the first day of the week, 6 is the final day.
+<em>	@param firstDayOfWk The first day of the week to use.  Default: 0 (Sunday)
+</em>	@param culture The culture to use to get the weekday name.  Default: null (will fetch Culture.defaultCulture)
+*	@return The abbreviated weekday name for the given culture, eg "Monday".  Returns null if no match was found.</p></div></div><div class="platform platform-project"><a name="weekDayNameShort"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#weekDayNameShort"><span class="identifier">weekDayNameShort</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="weekDayNumFromName"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#weekDayNumFromName"><span class="identifier">weekDayNumFromName</span></a>(weekDayName:<a class="type" href="../../String.html">String</a>, ?firstDayOfWk:<a class="type" href="../../Int.html">Int</a> = 0, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../Int.html">Int</a></code></p></h3><div class="doc"><p>Given a week day name, figure out the weekday number.</p>
+<p>  The name can be provided as the long name (eg "Sunday") or the abbreviated form ("sunday") and
+  is matched against the values in your culture.dates.days[] or culture.dates.abbrDays[].  It is
+  case insensitive.</p>
+<p>  The number returned is adjusted for your start day of week.  For example (in English):</p>
+<p>      when firstDayOfWk=0, a search for "Monday" will return 1.
+      when firstDayOfWk=1, a search for "Monday" will return 0.</p>
+<pre><code>@param weekDayName The name of the weekday.  Can be abbreivated (Mon) or full (Monday).  Case insensitive. (monday)
+@param firstDayOfWk The first day of the week to use.  Default: 0 (Sunday)
+@param culture The culture to use to get the weekday name.  Default: null (will fetch Culture.defaultCulture)
+@return The number day in the week this is.  Will return -1 if no match was found.
+</code></pre></div></div><div class="platform platform-project"><a name="weekDayShortNameFromNum"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#weekDayShortNameFromNum"><span class="identifier">weekDayShortNameFromNum</span></a>(weekDayNum:<a class="type" href="../../Int.html">Int</a>, ?firstDayOfWk:<a class="type" href="../../Int.html">Int</a> = 0, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p>Given a week day number, retrieve the abbreviated day name.
+<em>
+</em>	@param weekDayNum The day number in the week.  0 is the first day of the week, 6 is the final day.
+<em>	@param firstDayOfWk The first day of the week to use.  Default: 0 (Sunday)
+</em>	@param culture The culture to use to get the weekday name.  Default: null (will fetch Culture.defaultCulture)
+*	@return The abbreviated weekday name for the given culture, eg "Mon".  Returns null if no match was found.</p></div></div><div class="platform platform-project"><a name="year"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#year"><span class="identifier">year</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div><div class="platform platform-project"><a name="yearMonth"></a><h3><p><code><span class="keyword">static </span><span class="keyword">function</span> <a href="#yearMonth"><span class="identifier">yearMonth</span></a>(date:<a class="type" href="../../Date.html">Date</a>, ?culture:<a class="type" href="../../thx/culture/Culture.html">Culture</a> = null):<a class="type" href="../../String.html">String</a></code></p></h3><div class="doc"><p></p></div></div></div></div></div></body></html>

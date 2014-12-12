@@ -1,0 +1,19 @@
+# Set index.n to come before index.php
+
+DirectoryIndex index.html index.php
+
+# Enable rewrite
+
+RewriteEngine On
+RewriteBase /haxe/ufront-example-HelloWorld/www/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L] 
+# RewriteRule ^(.*)$ index.php/$1
+
+# Get our stuff gzipped
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+
+# Add a type for the IE8 pollyfills
+AddType text/x-component .htc
