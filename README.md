@@ -2,12 +2,24 @@
 
 "Hello, world!" example web application, based on the excellent [ufront MVC](https://github.com/ufront/ufront).
 
-Refer to the repo Wiki for a complete guide / tutorial.
+**Refer to the repo Wiki for a complete guide / tutorial.**
+
+This project demonstrates the following:
+* creating and configuring the UFront Application object
+* managing routes
+* handling form input (POST, GET requests)
+* using views
+
+Contents:
+* `dox` - generated documentation
+* `src` - source files
+* `wiki` - repo wiki entries as Markdown files
+* `www` - build output
 
 ## TODO
 
-* README
- * Write more detailed introduction, I guess
+Wiki
+* Reread. Rewrite. Repeat ad infinitum.
 
 ## Requirements
 
