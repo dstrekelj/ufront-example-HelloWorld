@@ -1,4 +1,4 @@
 {
-	"basePath" : "/haxe/ufront-example-HelloWorld/www/",
+	"basePath" : "/",
 	"defaultLayout" : "layout.html"
 }

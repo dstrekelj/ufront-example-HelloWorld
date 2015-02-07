@@ -16,6 +16,18 @@ Contents:
 * `wiki` - repo wiki entries as Markdown files
 * `www` - build output
 
+## CHANGELOG
+
+__2015/07/02__
+* Bumped up ufront version number
+* Dropped PHP compilation target in favour of Neko
+* Added server.bat as a shortcut to run the nekotools server and host the site
+* Added dox.bat as a shortcut to running the documentation tool for generating the docs
+* Updated generated documentation
+* Updated README
+
+**If you have `nekotools` installed, running the server.bat file (or the commands within it) will begin hosting the project!**
+
 ## TODO
 
 Wiki

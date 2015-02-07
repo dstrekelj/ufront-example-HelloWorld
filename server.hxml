@@ -1,0 +1,9 @@
+-lib ufront:1.0.0-rc.12
+
+-cp src
+-main Server
+
+-D server
+
+-neko www/index.n
+-xml dox.xml

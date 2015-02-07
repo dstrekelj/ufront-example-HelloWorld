@@ -1,0 +1,1 @@
+nekotools server -rewrite -d www/
